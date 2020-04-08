@@ -1,0 +1,467 @@
+
+@import url(//db.onlinewebfonts.com/c/24742b399854e34e15d84b6f59850ddc?family=Branding);
+
+@font-face {font-family: "Branding"; src: url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.eot"); src: url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.woff") format("woff"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.svg#Branding") format("svg"); }
+
+
+@import url(//db.onlinewebfonts.com/c/f97d3b737481b74a0dffaa764aebf4e3?family=Branding);
+
+
+@font-face {font-family: "Branding"; src: url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.eot"); src: url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.woff") format("woff"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.svg#Branding") format("svg"); }
+html,
+body {
+	overflow-x: hidden;
+	/* Prevent scroll on narrow devices */
+}
+
+body {
+	scroll-behavior: smooth !important;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #fff !important;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #9E9E9E;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #3e3e3e;
+	overflow-x: hidden;
+}
+
+body :focus {
+	outline: none;
+}
+
+button:focus {
+	outline: 5px auto transparent;
+}
+
+section {
+	padding: 50px 0 50px;
+}
+
+.fixed-top {
+	position: initial;
+
+}
+
+.navbar {
+	background: transparent;
+
+
+}
+
+.top {
+	top: 0rem;
+}
+
+.top-cero {}
+
+.navbar-nav .nav-link {
+	padding-right: 1.5rem !important;
+	color: #171717;
+}
+
+.navbar-brand img {
+	width: 40%;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+	padding-right: 1.5rem !important;
+	color: #ffffff;
+	font-weight: lighter;
+}
+
+.nav-item:nth-child(3) {
+	list-style: initial;
+	color: white;
+	margin-left: 9px;
+}
+
+.nav-item:nth-child(4) {
+	list-style: initial;
+	color: white;
+	margin-left: 9px;
+}
+
+.nav-item:nth-child(5) {
+	list-style: initial;
+	color: white;
+	margin-left: 9px;
+}
+
+.nav-item:nth-child(6) {
+	list-style: initial;
+	color: white;
+	margin-left: 9px;
+}
+
+.navbar-nav .nav-link:hover {
+
+	color: #d32b2b;
+}
+
+/* mega munu buscador */
+header {
+	background-color: #333333;
+	height: 45vh;
+}
+
+.main-menu__top {
+	display: grid;
+	grid-template-columns: 300px 500px 300px;
+	padding-top: 40px;
+}
+
+.main-menu__top-item ul {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+}
+
+.main-menu__top-item ul li img {
+	width: 25px;
+}
+
+.main-menu__top-item ul li a {
+	margin-left: 25px;
+	background-color: #e6e6e6;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	border-radius: 100%;
+}
+
+.main-menu__top-item ul li:nth-child(2) a {
+	background-color: #d32b2b;
+
+}
+
+.main-menu__top-item ul li a:hover {
+	background-color: #ffffff;
+}
+
+.main-menu__top-item ul li:nth-child(2):hover img {
+	filter: invert(0);
+}
+
+.main-menu__top-item ul li:nth-child(2) img {
+
+	filter: invert(1);
+}
+
+.megamenu-li {
+	position: static;
+}
+
+.megamenu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+
+.form-general input {
+	vertical-align: middle;
+	border-radius: 0;
+	background: #e6e6e6;
+	border: 0;
+	font-size: .8rem;
+	width: 400px !important;
+}
+
+.main-banner__img {
+	height: 500px;
+}
+
+.main-banner__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.bg {
+	background: #e6e6e6;
+	margin-top: -70px;
+	padding: 30px 20px;
+}
+
+.btn-form img {
+	width: 20px;
+	filter: opacity(0.5);
+}
+
+.btn-form {
+	background: #e6e6e6;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 7px;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 40px 0px 10px;
+}
+
+.main-banner {
+	position: relative;
+}
+
+.desc {
+	display: flex;
+	justify-content: center;
+	background: #db6666;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.desc p {
+	margin: 0;
+}
+
+.desc strong {
+	font-size: 2.5rem;
+}
+
+.main-banner__content .title {
+	position: absolute;
+	top: 30%;
+	margin: 0 30px;
+	color: #fff;
+}
+
+.main-banner__content .title p {
+	font-size: 2.5rem;
+	color: #000;
+	margin: 0;
+	line-height: 1.2;
+}
+
+.main-banner__content .title p:nth-child(2) strong {
+	font-size: 2rem;
+	color: #d32b2b;
+}
+
+.main-banner__content .title p:nth-child(2) {
+	font-size: 1.5rem;
+
+}
+
+.main-banner__content .title p:nth-child(2) small {
+	font-size: 1rem;
+	color: #8e8e8e;
+
+}
+
+.main-banner__content .title p:nth-child(3) {
+
+	font-size: 1.5rem;
+}
+
+.btn-general {
+	color: #fff;
+	background: #d32b2b;
+	padding: 10px 50px 10px 10px;
+	border-radius: 50px;
+	font-size: 1rem;
+	outline: transparent;
+	border: 1px solid #d32b2b;
+	text-decoration: none !important;
+	transition: .5s;
+}
+
+.btn-general:hover {
+	background: #fff;
+	color:#d32b2b ;
+	padding: 10px 50px 10px 10px;
+	border-radius: 50px;
+	font-size: 1rem;
+	outline: transparent;
+	text-decoration: none !important;
+}
+.main-banner__card{
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	/* gap: 20px; */
+}
+.main-banner__card-img img{
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+	padding-left: 15px;
+}
+.main-banner__card-img{
+	margin-top: 20px;
+    height: 200px;
+    width: 100%;
+}
+
+.title__general{
+	text-align: center;
+	font-size: 2.2rem;
+	color: #000;
+	position: relative;
+}
+
+.title__general p::after {
+	position: absolute;
+    width: 130px;
+    border-radius: 10px;
+    height: 5px;
+    top: 50px;
+    right: 43%;
+    bottom: 0;
+    background: #d32b2b;
+    content: "";
+}
+.title__general__blue p::after {
+
+    background: #87b4be;
+
+}
+
+
+/* slick categoria */
+.slick-slide img {
+    display: block;
+    width: 100%;
+}
+.main-categorias__item{
+	width: 50px;
+}
+.ddd{
+    padding: 20px;
+    background: white;
+    border-left: 2px solid #e6e6e6;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 150px; */
+    height: 150px;
+}
+
+/* tiendas */
+
+/*mejores-tiendas*/
+section.mejores-tiendas {
+	position: relative;
+	right: 15px;
+  }
+  .mejores-tiendas h2 {
+	  text-align: center;
+	  position: relative;
+	  padding-top: 10%;
+	  padding-bottom: 5%;
+  }
+  .mejores-tiendas h2::after {
+	position: absolute;
+	width: 11%;
+	border-radius: 5px;
+	height: 5px;
+	top: 155px;
+	left: 46%;
+	right: 46%;
+	bottom: 0;
+	background: #87b4be;
+	content: "";
+  }
+  
+  img.col-mejores-tiendas-principal {
+	width: 112px;
+    height: 112px;
+    position: relative;
+    z-index: 10000;
+    margin-top: -19%;
+    border-radius: 90px;
+    box-shadow: 0px 0px 12px #00000082;
+	object-fit: cover;
+  }
+  
+  .contenedor-col-mejores-tiendas {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  border: 1px solid #9E9E9E;
+	  border-radius: 26px;
+	  height: 320px;
+	  background: #ffff;
+  }
+  .fondo-mejores-tientas {
+    position: relative;
+    z-index: 9999!important;
+    background: #87b4be;
+    height: 110px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .sub-img-mejores-tiendas {
+	border: 1px solid #9E9E9E;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    border-radius: 5px;
+    height: 50px;
+  }
+  .sub-img-mejores-tiendas img{
+	width: 100%;
+  }
+  .col-md-4.imagenes-hp-col-4 {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  a.mejores-tiendas-boton {
+    color: #888282!important;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+a.mejores-tiendas-boton:hover {
+ color: #87b4be!important; 
+}
+.contenedor-col-mejores-tiendas h3{
+	margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content-slider{
+	background: #fff;
+	width: 215px;
+	height: 230px;
+}
+.main-slider__content .slick-slide {
+    width: 200px!important;
+}
