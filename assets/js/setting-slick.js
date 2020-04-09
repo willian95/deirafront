@@ -41,6 +41,9 @@ $('.main-categorias__content').slick({
   slidesToScroll: 1,
   dots: false,
   arrows: true,
+  centerMode: false,
+  centerPadding: '10px',
+
   responsive: [{
       breakpoint: 1200,
       settings: {
@@ -71,7 +74,7 @@ $('.main-categorias__content').slick({
 
 $('.main-slider__content').slick({
   // infinite: true,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   dots: false,
   arrows: true,

@@ -1,17 +1,45 @@
+@font-face {
+	font-family: "Branding W00 Bold";
+	src: url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.eot");
+	/* IE9*/
+	src: url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.woff2") format("woff2"),
+		/* chrome、firefox */
+		url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.woff") format("woff"),
+		/* chrome、firefox */
+		url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.ttf") format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("../Fonts/f97d3b737481b74a0dffaa764aebf4e3.svg#Branding W00 Bold") format("svg");
+	/* iOS 4.1- */
+}
 
-@import url(//db.onlinewebfonts.com/c/24742b399854e34e15d84b6f59850ddc?family=Branding);
+@font-face {
+	font-family: "Branding-SemiLight";
+	src: url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.eot");
+	/* IE9*/
+	src: url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.woff2") format("woff2"),
+		/* chrome、firefox */
+		url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.woff") format("woff"),
+		/* chrome、firefox */
+		url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.ttf") format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("../Fonts/31fce0e9dbe5cf577e95660cb1d05f97.svg#Branding-SemiLight") format("svg");
+	/* iOS 4.1- */
+}
 
-@font-face {font-family: "Branding"; src: url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.eot"); src: url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.woff") format("woff"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/24742b399854e34e15d84b6f59850ddc.svg#Branding") format("svg"); }
-
-
-@import url(//db.onlinewebfonts.com/c/f97d3b737481b74a0dffaa764aebf4e3?family=Branding);
-
-
-@font-face {font-family: "Branding"; src: url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.eot"); src: url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.woff") format("woff"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f97d3b737481b74a0dffaa764aebf4e3.svg#Branding") format("svg"); }
 html,
 body {
 	overflow-x: hidden;
 	/* Prevent scroll on narrow devices */
+	font-family: "Branding-SemiLight" !important;
+}
+
+strong {
+	font-family: "Branding W00 Bold";
+	font-weight: bolder;
 }
 
 body {
@@ -71,10 +99,15 @@ section {
 .navbar-nav .nav-link {
 	padding-right: 1.5rem !important;
 	color: #171717;
+	font-size: 1.2rem;
 }
 
 .navbar-brand img {
 	width: 40%;
+}
+
+.logo {
+	width: 85%;
 }
 
 .navbar-brand {
@@ -203,6 +236,8 @@ header {
 	background: #e6e6e6;
 	margin-top: -70px;
 	padding: 30px 20px;
+	z-index: 1;
+    position: relative;
 }
 
 .btn-form img {
@@ -244,7 +279,9 @@ header {
 }
 
 .desc p {
-	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1;
+	font-weight: bold;
 }
 
 .desc strong {
@@ -253,20 +290,21 @@ header {
 
 .main-banner__content .title {
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	margin: 0 30px;
 	color: #fff;
 }
 
 .main-banner__content .title p {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color: #000;
 	margin: 0;
 	line-height: 1.2;
+
 }
 
 .main-banner__content .title p:nth-child(2) strong {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: #d32b2b;
 }
 
@@ -296,172 +334,401 @@ header {
 	border: 1px solid #d32b2b;
 	text-decoration: none !important;
 	transition: .5s;
+	font-family: "Branding W00 Bold";
+	font-weight: bolder;
 }
 
 .btn-general:hover {
 	background: #fff;
-	color:#d32b2b ;
+	color: #d32b2b;
 	padding: 10px 50px 10px 10px;
 	border-radius: 50px;
 	font-size: 1rem;
 	outline: transparent;
 	text-decoration: none !important;
 }
-.main-banner__card{
+
+.main-banner__card {
 	display: grid;
 	grid-template-columns: 25% 50% 25%;
 	/* gap: 20px; */
 }
-.main-banner__card-img img{
-    width: 100%;
-    height: 100%;
+
+.main-banner__card-img img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	padding-left: 15px;
-}
-.main-banner__card-img{
-	margin-top: 20px;
-    height: 200px;
-    width: 100%;
+
 }
 
-.title__general{
+.main-banner__card-img {
+	margin-top: 20px;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	padding: 10px;
+}
+
+.main-banner__card-img .title {
+	padding: initial;
+	position: absolute;
+	top: 30px;
+	color: #fff;
+	text-align: end;
+	width: 90%;
+	line-height: 1;
+}
+
+.main-banner__card-img:nth-child(2) .title {
+	top: 70px;
+}
+
+.main-banner__card-img:nth-child(2) span {
+	color: #21333c !important;
+	font-weight: bold;
+	font-family: "Branding W00 Bold";
+	font-size: 1.9rem;
+	margin-bottom: 50px;
+}
+
+.main-banner__card-img:nth-child(3) span {
+	color: #fff !important;
+
+}
+
+.main-banner__card-img:nth-child(2) .title strong {
+	font-size: 2.5rem;
+}
+
+.main-banner__card-img a {
+	background: #e3e3e3;
+	border-radius: 50px;
+	padding: 3px 10px;
+	color: #94291c;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+
+.main-banner__card-img span {
+	display: flex;
+	flex-direction: column;
+	line-height: .6;
+	color: #d32b2b !important;
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.main-banner__card-img .title strong {
+	font-size: 2rem;
+}
+
+.main-banner__card-img:nth-child(2) .title p {
+	font-size: 2rem;
+
+}
+
+.title__general {
 	text-align: center;
 	font-size: 2.2rem;
 	color: #000;
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .title__general p::after {
 	position: absolute;
-    width: 130px;
-    border-radius: 10px;
-    height: 5px;
-    top: 50px;
-    right: 43%;
-    bottom: 0;
-    background: #d32b2b;
-    content: "";
+	width: 130px;
+	border-radius: 10px;
+	height: 5px;
+	top: 50px;
+	right: 43%;
+	bottom: 0;
+	background: #d32b2b;
+	content: "";
 }
+
 .title__general__blue p::after {
 
-    background: #87b4be;
+	background: #87b4be;
 
 }
 
 
 /* slick categoria */
 .slick-slide img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
-.main-categorias__item{
-	width: 50px;
-}
-.ddd{
-    padding: 20px;
-    background: white;
-    border-left: 2px solid #e6e6e6;
 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 150px; */
-    height: 150px;
+.main-categorias__item {
+	width: 100px;
 }
+.main-categorias-txt{
+	background: #fff;
+    height: 150px;
+    /* width: 150px; */
+	padding: 30px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 2px;
+	transition: .5s;
+
+
+}
+.main-categorias-txt a{
+
+	text-decoration: none;
+}
+.main-categorias-txt span{
+    color: #9E9E9E;
+    font-size: 1rem;
+}
+.main-categorias-txt:hover{
+	background: #d32b2b;
+	transition: .5s;
+   
+}
+.main-categorias__content{
+	padding-left: 100px;
+    padding-right: 100px;
+}
+.main-categorias__content .slick-prev {
+ 
+    left: 0px;
+}
+.main-categorias__content .slick-next {
+    right: 75px;
+}
+/* .main-categorias-txt {
+	padding: 20px;
+	background: white;
+	border-left: 2px solid #e6e6e6;
+
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 150px;
+}
+.main-categorias-txt img{
+	width: 50px;
+} */
 
 /* tiendas */
+.main-shop__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 12px;
+}
 
-/*mejores-tiendas*/
-section.mejores-tiendas {
-	position: relative;
-	right: 15px;
-  }
-  .mejores-tiendas h2 {
-	  text-align: center;
-	  position: relative;
-	  padding-top: 10%;
-	  padding-bottom: 5%;
-  }
-  .mejores-tiendas h2::after {
-	position: absolute;
-	width: 11%;
-	border-radius: 5px;
-	height: 5px;
-	top: 155px;
-	left: 46%;
-	right: 46%;
-	bottom: 0;
-	background: #87b4be;
-	content: "";
-  }
-  
-  img.col-mejores-tiendas-principal {
-	width: 112px;
-    height: 112px;
-    position: relative;
-    z-index: 10000;
-    margin-top: -19%;
-    border-radius: 90px;
-    box-shadow: 0px 0px 12px #00000082;
-	object-fit: cover;
-  }
-  
-  .contenedor-col-mejores-tiendas {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  border: 1px solid #9E9E9E;
-	  border-radius: 26px;
-	  height: 320px;
-	  background: #ffff;
-  }
-  .fondo-mejores-tientas {
-    position: relative;
-    z-index: 9999!important;
-    background: #87b4be;
-    height: 110px;
-    width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  .sub-img-mejores-tiendas {
+.main-shop__card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 10px;
+}
+
+.main-shop__item {
 	border: 1px solid #9E9E9E;
-    display: flex;
-    justify-content: center;
-    width: 50px;
-    border-radius: 5px;
-    height: 50px;
-  }
-  .sub-img-mejores-tiendas img{
-	width: 100%;
-  }
-  .col-md-4.imagenes-hp-col-4 {
-	  display: flex;
-	  justify-content: center;
-  }
+	background: #fff;
+	border-radius: 10%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	padding: 30px 15px 5px;
+}
 
-  a.mejores-tiendas-boton {
-    color: #888282!important;
-    font-weight: 500;
+.main-shop__item a {
+	color: #4a4949;
+	font-size: .9rem;
+	text-decoration: none;
+}
+
+.main-shop__item img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/* background: #fff; */
+	position: relative;
+}
+
+.main-shop__card-item img {
+	border: 1px solid #9E9E9E;
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.main-shop__item::before {
+	content: "";
+	background: #87b4be;
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	left: 0;
+	top: 0;
+}
+
+.main-shop__item p {
+	font-size: 2rem;
+	font-family: "Branding W00 Bold";
+	font-weight: bolder;
+	margin-bottom: 15px;
+}
+
+/* slider */
+
+.content-slider {
+	background: #fff;
+	width: 100%;
+	height: 250px;
+}
+
+.main-slider__content .slick-slide {
+
+	margin-left: 15px !important;
+}
+
+.slick-next:before {
+	font-size: 14px;
+	color: #d80000;
+	content: url(../img/deira-64.png);
+	z-index: 3;
+}
+
+.slick-prev:before {
+	font-size: 14px;
+	color: #d80000;
+	content: url(../img/deira-65.png);
+	z-index: 3;
+}
+
+.slick-prev {
+	right: auto;
+	z-index: 1;
+	left: -30px;
+
+}
+
+.slick-prev,
+.slick-next {
+	top: 20%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	opacity: 1;
+}
+
+.slick-next {
+	right: 25px;
+}
+
+/* card slider */
+.main-slider__text span:nth-child(1) {
+	font-size: .9rem;
+}
+
+.main-slider__text .title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: "Branding W00 Bold";
+	margin: 0;
+	line-height: .9;
+    color: #55565a;
+}
+.main-slider__text .title-blue {
+
+    color: #55565a;
+}
+
+.main-slider__text .price {
+	color: #d32b2b;
+	font-size: 1.1rem;
+	line-height: 0;
+	font-weight: 700;
+}
+
+.price-old {
+	margin: 0;
+	line-height: 1;
+	font-size: .8rem;
+}
+
+.price-old span {
+	text-decoration: line-through;
+}
+
+/* footer */
+.main-footer__content{
+	display: grid;
+	grid-template-columns: 35% 45% 20%;
+}
+
+footer{
+	background: #333333;
+	margin-top: -20px;
+}
+.main-footer__item{
+	margin-top: 50px;
+	text-align: center;
+}
+.logo-footer{
+	width: 300px;
+}
+
+.description {
+	color: #fff;
     font-size: .9rem;
-    margin-top: 10px;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.contact img{
+	width: 30px;
+    filter: invert(1);
+}
+
+.contact {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.contact:hover {
+	color: #d32b2b;
     text-decoration: none;
 }
-a.mejores-tiendas-boton:hover {
- color: #87b4be!important; 
-}
-.contenedor-col-mejores-tiendas h3{
-	margin: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
+.main-footer__item ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
 }
 
-.content-slider{
-	background: #fff;
-	width: 215px;
-	height: 230px;
+.main-footer__item ul li img{
+	width: 50px;
+	margin-right: 20px;
+    margin-top: 10px;
 }
-.main-slider__content .slick-slide {
-    width: 200px!important;
+.menu-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: baseline;
+}
+.menu-grid ul{
+	display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.menu-grid a{
+	font-size: .9rem;
+    color: #9e9e9e!important;
+}
+.menu-grid .title{
+	color: #fff;
+    padding-bottom: 5%;
+	font-weight: bold;
+	font-size: .9rem;
 }
