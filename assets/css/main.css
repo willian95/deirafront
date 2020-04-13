@@ -1609,3 +1609,35 @@ img.lista-pedido {
 .icono-buy__item img{
 	width: 110px;
 }
+
+.grid-menu{
+	display: grid;
+	/* grid-template-columns: 40% 20% 20% 20%; */
+	gap: 10px;
+}
+.mega-menu .dropdown-menu {
+    
+	min-width: 18rem;
+	background-color: #e6e6e6;
+   
+}
+.grid-menu ul{
+	list-style: none;
+    margin: 0;
+    padding-left: 20px;
+}
+/* .grid-menu__item:nth-child(2){
+	display:none ;
+}
+.grid-menu__item:nth-child(3){
+	display:none ;
+}
+.grid-menu__item:nth-child(4){
+	display:none ;
+} */
+
+.dropdown-menu {
+
+    border: 0;
+    box-shadow: 0px 0px 5px;
+}
